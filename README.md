@@ -2,7 +2,7 @@
 
 ##Dependencies
 - Python3.4 (not 3.5, because of kivy and mingw issues)
-- Python-osc
+- Python-osc (version 1.6+)
 - Kivy
 - ChucK
 
