@@ -15,9 +15,10 @@ class TestApp(App):
 
 
 def do_osc(arg):
+    print('Sending package')
     # client = udp_client.UDPClient('127.0.0.1', 5005)
     client = udp_client.UDPClient('localhost', 5005)
-    msg = osc_message_builder.OscMessageBuilder(address="debug")
+    msg = osc_message_builder.OscMessageBuilder(address="/debug")
     # msg.add_arg(random.random())
     msg = msg.build()
     client.send(msg)
