@@ -8,8 +8,7 @@ orec.event("/debug") @=> OscEvent e;
 <<<"Listening for OSC events">>>;
 
 SinOsc s => dac;
-int freq;
-100 => freq;
+100 => int freq;
 freq => s.freq;
 
 while (true)
